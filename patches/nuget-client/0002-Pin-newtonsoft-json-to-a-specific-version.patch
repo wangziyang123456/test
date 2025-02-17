@@ -1,0 +1,25 @@
+From 68244fc5dad5a834e5dfa74306d43f669d848a17 Mon Sep 17 00:00:00 2001
+From: dseefeld <dseefeld@microsoft.com>
+Date: Fri, 20 Sep 2019 16:02:57 +0000
+Subject: [PATCH 2/7] Pin newtonsoft json to a specific version
+
+---
+ build/packages.targets | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/build/packages.targets b/build/packages.targets
+index a5fa8b5f6..7ceec6b95 100644
+--- a/build/packages.targets
++++ b/build/packages.targets
+@@ -1,7 +1,7 @@
+ <Project>
+     <PropertyGroup>
+         <MicrosoftBuildPackageVersion Condition="'$(MicrosoftBuildPackageVersion)' == ''">16.8.0</MicrosoftBuildPackageVersion>
+-        <NewtonsoftJsonPackageVersion Condition="$(NewtonsoftJsonPackageVersion) == ''">9.0.1</NewtonsoftJsonPackageVersion>
++        <NewtonsoftJsonPackageVersion>9.0.1</NewtonsoftJsonPackageVersion>
+         <SystemPackagesVersion>4.3.0</SystemPackagesVersion>
+         <VSFrameworkVersion>16.9.30701-preview-3-30804-187</VSFrameworkVersion>
+         <VSServicesVersion>16.153.0</VSServicesVersion>
+-- 
+2.18.0
+
